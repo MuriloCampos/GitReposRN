@@ -1,5 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import {StatusBar} from 'react-native';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import './config/ReactotronConfig';
+import Routes from './routes';
+
+export default function App() {
+  return (
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
+      <Routes />
+    </>
+  );
+}
